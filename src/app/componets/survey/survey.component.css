@@ -1,0 +1,107 @@
+.responsive-sidenav-container{
+    height:100vh;
+}
+mat-sidenav{
+    /* background-color: white; */
+    height:100vh;
+}
+
+h3:hover{
+    color:blue;
+}
+mat-sidenav button{
+    background-color: white;
+    width:100%; 
+
+}
+
+mat-sidenav button:hover{
+    color:blue;
+}
+
+.active{
+    color:rgb(6, 158, 247);
+    border:solid 2px rgb(6, 158, 247);
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24);
+}
+
+
+div{
+    border:1px solid;
+    height:100vh;
+    
+  }
+  img{
+    height: 100px;
+    width:100px;
+  }
+  a{
+     text-decoration: none !important;
+    color:black !important;
+  }
+  .container {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+      background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+      background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+      display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  
+  label:hover{
+    background-color:grey;
+  }

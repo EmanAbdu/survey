@@ -1,0 +1,138 @@
+<mat-sidenav-container class="responsive-sidenav-container" hasBackdrop="true">
+  <mat-sidenav #drawer mode="over">
+
+    <section *ngFor="let question of surveyQuestions, index as i">
+        
+      <button mat-button (click)= "getCurrentQuestion(question.qName)" [class.active]="currentQuestion && currentQuestion == question.qName"><a href="#{{question.qID}}">{{question.qName}}</a></button>
+
+    </section>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button mat-raised-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+    </button>
+   
+
+
+    <header>
+        Welcome Eman Abdu
+      </header>
+      <div >
+        <img src="https://images.unsplash.com/photo-1509460181860-1f17dd8cb0b0?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=450e3b7e7df1b04933e8e28b52db5f05" alt="">
+        This is a survey to test your satisfction about the service that provided b docotr :  Othman Al-Amoudi
+        <button onclick="mylinkfunction('#second')"> <a href="#first"> start survey  </a></button>
+      
+      </div>
+      
+      <div id="first">
+      <h1>what are you doing?</h1>
+         <a href="#third"> .
+      <label class="container">
+       One
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+           </a>
+      <label class="container">
+         <a href="#third">Two</a>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <a href="#third">Three</a>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <a href="#third">Four</a>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      </div>
+      
+      <div id="second">
+      <h1>how do you do??</h1>
+      <label class="container">One
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Two
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Three
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Four
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      </div>
+      <div>
+        
+      <h1>Custom Radio Buttons</h1>
+      <label class="container">One
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Two
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Three
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Four
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      </div>
+      <div>
+        
+      <h1>Custom Radio Buttons</h1>
+      <label class="container">One
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Two
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Three
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Four
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      </div>
+      <div>
+        
+      <h1>Custom Radio Buttons</h1>
+      <label class="container">One
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Two
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Three
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Four
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      </div>
+
+
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
